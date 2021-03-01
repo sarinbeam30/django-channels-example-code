@@ -56,9 +56,10 @@ class RealTimeConsumer(AsyncWebsocketConsumer):
 
 
     async def log_message(self, event):
-        message = event['message']
+        print('EVENT : ' + str(event))
+        message = event["message"]
         await self.send(text_data=json.dumps({
-            'message': message
+            "message": message
         }))
 
         print("----------LOG--------")
