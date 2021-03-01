@@ -62,6 +62,6 @@ class RealTimeConsumer(AsyncWebsocketConsumer):
             "message": message
         }))
 
-        print("----------LOG--------")
+        print("---------------LOG------------")
 
         
