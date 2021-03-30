@@ -88,7 +88,7 @@ CELERY_TIMEZONE = "Asia/Bangkok"
 CELERY_BEAT_SCHEDULE = {
     'websockettask': {
         'task': 'chat.tasks.realtime_task',
-        'schedule': 20 # this means, the task will run itself every second
+        'schedule': 10 # this means, the task will run itself every second
     },
 }
 

@@ -24,4 +24,5 @@ def realtime_task():
             "message": list_model_json
         }
     ) 
-    
+
+    print('----** SEND_DATA_LEAW **----')

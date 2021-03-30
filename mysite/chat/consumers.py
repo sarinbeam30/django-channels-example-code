@@ -29,7 +29,7 @@ class RealTimeConsumer(AsyncWebsocketConsumer):
             self.channel_name
         )
         await self.accept()
-        print("----------connected--------")
+        print("---------- connected_leaw --------")
 
     
     async def disconnect(self, close_code):
@@ -39,7 +39,7 @@ class RealTimeConsumer(AsyncWebsocketConsumer):
             self.channel_name
         )
         print("DISCONNECED CODE: ", close_code)
-        print("----------disconnect--------")
+        print("---------- disconnect_leaw --------")
 
     # Receive message from WebSocket
     async def receive(self, text_data=None, bytes_data=None):
